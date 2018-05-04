@@ -13,7 +13,7 @@ O(sqrt(n))
 O(n log n)
 
 #E
-O(n^3)
+O(n^4)
 
 #F
 O(n)
