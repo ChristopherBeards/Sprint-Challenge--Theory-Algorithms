@@ -34,11 +34,9 @@ function maxDiff(a) {
   for (let i = 2; i < a.length; i++) {
     high = Math.max(high, a[i]);
     low  = Math.min(low, a[i]);
-
-    highestDiff = Math.max(highestDiff, high - low);
   }
   
-  return highestDiff;
+  return high - low;
 }
 
 #B
