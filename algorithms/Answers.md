@@ -13,7 +13,7 @@ O(sqrt(n))
 O(n log n)
 
 #E
-O(n^4)
+O(n^3)
 
 #F
 O(n)
@@ -24,6 +24,22 @@ O(n)
 ##Exercise 2
 
 #A
+Given an array  A of n numbers, design a linear running time algorithm to find the maximum value of a[j] - a[i], where j >= i.
+
+function maxDiff(a) {
+  let high = Math.max(a[0], a[1]);
+  let low  = Math.min(a[0], a[1]);
+  let highestDiff = high - low;
+
+  for (let i = 2; i < a.length; i++) {
+    high = Math.max(high, a[i]);
+    low  = Math.min(low, a[i]);
+
+    highestDiff = Math.max(highestDiff, high - low);
+  }
+  
+  return highestDiff;
+}
 
 #B
 
@@ -32,6 +48,8 @@ O(n)
 ##Exercise 3
 
 #A
+O(n):
+
 
 #B
 

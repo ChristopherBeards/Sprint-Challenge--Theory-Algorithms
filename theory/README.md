@@ -80,6 +80,10 @@ both `antelope` and `antelopes`.)
 
   changes the font to bold.
 
+//--------------------------------
+//            Answer
+//--------------------------------
+
   * Come up with regexes for the two above sequences. The one to set the
     cursor position should accept any digits for the row and column. The
     bold sequence need only accept `1` (and is a trivial regex). (ESC is
